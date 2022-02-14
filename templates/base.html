@@ -23,8 +23,8 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation" class="active"><a href="{{url_for('index')}}">Home</a></li>
+            <!-- <li role="presentation"><a href="#">About</a></li> -->
             {% if current_user.is_authenticated %}  <!-- if there is a user logged -->
               <li><a href = "{{url_for('logout')}}">Logout</a></li>
             {% else %}
@@ -55,8 +55,8 @@
 
 
     </div>
-      <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
+      <footer class="footer" align = "center">
+        <p>&copy; 2022 Company, Inc.</p>
       </footer>
 
     <!-- /container -->
